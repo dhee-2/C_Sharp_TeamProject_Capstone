@@ -1,0 +1,21 @@
+﻿<Window x:Class="Hcode.HelpWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Hcode"
+        
+       mc:Ignorable="d"
+       Height="631.2" Width="612" WindowStyle="None" Background="#FF1D1D1D" BorderBrush="#FF52DA23" BorderThickness="1" Foreground="{x:Null}" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+
+    <Grid Height="438" Margin="10,0,-1.6,0" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="383*"/>
+        </Grid.RowDefinitions>
+        <Label Content="도움말" Background="{x:Null}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" Padding="0" FontSize="18" FontWeight="Bold" Margin="0,0,0,394.4" Grid.RowSpan="2"/>
+        <Button Style="{DynamicResource SystemButton}" x:Name="CloseButton" Content="r" Click="cancelButton_Click" Margin="568,1,0,399.4" Grid.RowSpan="2"/>
+        <TextBlock x:Name="textBox" HorizontalAlignment="Center" Foreground="White" Height="558" Margin="10,22.4,10,-163.6" TextWrapping="Wrap" VerticalAlignment="Top" Width="582" Grid.Row="1" 
+                   ><Run FontSize="15"/><LineBreak/><Run FontSize="15" Text="Ⅰ"/><Run FontSize="15" Text=". "/><Run FontSize="15" Text="파일"/><LineBreak/><Run/><LineBreak/><Run Text=" "/><Run Text="1"/><Run Text="."/><Run Text=" 새로 만들기"/><LineBreak/><Run Text=" "/><Run Text="⦁"/><Run Text=" 파일을 새로 만들 수 있다."/><LineBreak/><Run/><LineBreak/><Run Text=" 2."/><Run Text=" 열기"/><LineBreak/><Run Text=" "/><Run Text="⦁"/><Run Text=" 완성된 파일을 연다."/><LineBreak/><Run/><LineBreak/><Run Text=" 3"/><Run Text=". 저장"/><LineBreak/><Run Text=" "/><Run Text="⦁"/><Run Text=" 작성한 코드를 파일에 저장한다."/><LineBreak/><Run/><LineBreak/><Run Text=" "/><Run Text="4. 현재 파일 닫기"/><LineBreak/><Run Text=" "/><Run Text="⦁"/><Run Text=" 현재 열린 파일을 닫는다."/><LineBreak/><Run/><LineBreak/><Run FontSize="15" Text="Ⅱ. 옵션"/><LineBreak/><Run FontSize="15"/><LineBreak/><Run Text=" "/><Run Text="1."/><Run Text=" UI 색상 변경(현재 구현 중)"/><LineBreak/><Run Text=" "/><Run Text="⦁"/><Run Text=" UI의 색상을 밝은 계열로 변경한다."/><LineBreak/><Run/><LineBreak/><Run FontSize="15" Text="Ⅲ. 디버깅"/><LineBreak/><Run FontSize="15"/><LineBreak/><Run Text=" "/><Run Text="1."/><Run Text=" 디버깅(현재 구현 중)"/><LineBreak/><Run Text=" "/><Run Text="⦁"/><Run Text=" 디버깅을 실행한다."/><LineBreak/><Run/><LineBreak/><Run Text=" "/><Run Text="2. 디버깅 하지 않고 시작"/><LineBreak/><Run Text=" "/><Run Text="⦁"/><Run Text=" 디버깅 없이 코드를 실행한다."/><LineBreak/><Run/><LineBreak/><Run FontSize="15" Text="Ⅳ. 도움말"/><LineBreak/><Run FontSize="15"/><LineBreak/><Run Text=" "/><Run Text="1."/><Run Text=" Hcode에 대한 도움 지원(업데이트 중)"/><LineBreak/><Run Text=" "/><Run Text="⦁"/><Run Text=" Hcode를 처음 접한 사용자들을 위해서, 도움말을 지원한다."/></TextBlock>
+    </Grid>
+</Window>
